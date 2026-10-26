@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0 0 8px 0;
+}
+
+header p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+}
+.attendance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.attendance-card {
+    background-color: rgb(74, 72, 72);
+    padding: 20px;
+    border-radius: 12px;
+    color: bisque;
+}
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#add-class {
+    background-color: black;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+#mark-attendance {
+    background-color: #222;
+    color: white;
+}
