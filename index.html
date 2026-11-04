@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Dashboard</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home page.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="theme">
+    <label for="theme" class="a">Switch Dark Mode</label>
+
+   
+    <div class="page">
+
+      
+        <header class="dashboard">
+
+            <div>
+                <h1>Hello, <span id="username">user</span></h1>
+
+                <nav>
+                    <a href="login.html">Login</a> |
+                    <a href="index.html">Home</a> |
+                    <a href="timetable.html">Timetable</a>
+                </nav>
+
+                <p>Your attendance overview</p>
+            </div>
+
+            <div class="date">
+                <span id="date">7/10/2026</span>
+            </div>
+
+        </header>
+
+       
+        <main>
+
+            <section class="attendance-grid">
+
+                <div class="attendance-card">
+                    <h2>Mathematics</h2>
+                    <div class="percentage">82%</div>
+                    <p>41/50 classes attended</p>
+                </div>
+
+                <div class="attendance-card">
+                    <h2>Programming</h2>
+                    <div class="percentage">76%</div>
+                    <p>38/50 classes attended</p>
+                </div>
+
+                <div class="attendance-card">
+                    <h2>EEE</h2>
+                    <div class="percentage">91%</div>
+                    <p>45/49 classes attended</p>
+                </div>
+
+                <div class="attendance-card">
+                    <h2>Web Development</h2>
+                    <div class="percentage">68%</div>
+                    <p>34/50 classes attended</p>
+                </div>
+
+                <div class="attendance-card">
+                    <h2>English</h2>
+                    <div class="percentage">88%</div>
+                    <p>44/50 classes attended</p>
+                </div>
+
+            </section>
+
+          
+            <div class="actions">
+
+                <button id="add-class">
+                    + Add Class
+                </button>
+
+                <button id="mark-attendance">
+                    Mark attendance for this class
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

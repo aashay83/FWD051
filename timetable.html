@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="timetable.css">
+<html>
+<head>
+    <title>Timetable Setup</title>
+</head>
+
+<body>
+    <input type="checkbox" id="theme">
+<label for="theme" class="a">Switch Dark Mode</label>
+    <div class="page">
+
+    <h1>Timetable Setup</h1>
+    <p>Set up your subjects and weekly class schedule.</p>
+
+    <nav>
+        <a href="login.html">Login</a> |
+        <a href="index.html">Home</a> |
+        <a href="timetable.html">Timetable</a>
+    </nav>
+
+    <hr>
+
+    <h2>1. Set Up Your Subjects</h2>
+
+    <form>
+        <p>
+            <label>Subject 1:</label>
+            <input type="text" name="subject1" value="Maths">
+        </p>
+
+        <p>
+            <label>Subject 2:</label>
+            <input type="text" name="subject2" value="English">
+        </p>
+
+        <p>
+            <label>Subject 3:</label>
+            <input type="text" name="subject3" value="EEE">
+        </p>
+
+        <p>
+            <label>Subject 4:</label>
+            <input type="text" name="subject4" value="C Programming">
+        </p>
+
+        <p>
+            <label>Subject 5:</label>
+            <input type="text" name="subject5" value="Web Dev">
+        </p>
+
+        <button type="button">Save Subjects</button>
+    </form>
+
+    <hr>
+
+    <h2>2. Weekly Timetable</h2>
+
+    <p><b>Start:</b> Counts as one class.</p>
+    <p><b>Continue:</b> Continues the same class without counting another class.</p>
+
+    <table border="1">
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <tr>
+            <th>09:30 - 10:00</th>
+
+            <td>
+                <select name="monday1">
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="monday1type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="tuesday1">
+                    <option>Web Dev</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                </select>
+                <select name="tuesday1type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="wednesday1">
+                    <option>EEE</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="wednesday1type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="thursday1">
+                    <option>C Programming</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="thursday1type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="friday1">
+                    <option>English</option>
+                    <option>Maths</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="friday1type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>10:00 - 10:30</th>
+
+            <td>
+                <select name="monday2">
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="monday2type">
+                    <option>Continue</option>
+                    <option>Start</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="tuesday2">
+                    <option>Web Dev</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                </select>
+                <select name="tuesday2type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="wednesday2">
+                    <option>EEE</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="wednesday2type">
+                    <option>Continue</option>
+                    <option>Start</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="thursday2">
+                    <option>C Programming</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="thursday2type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="friday2">
+                    <option>English</option>
+                    <option>Maths</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="friday2type">
+                    <option>Continue</option>
+                    <option>Start</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>10:30 - 11:00</th>
+
+            <td>
+                <select name="monday3">
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="monday3type">
+                    <option>Continue</option>
+                    <option>Start</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="tuesday3">
+                    <option>EEE</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="tuesday3type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="wednesday3">
+                    <option>Web Dev</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                </select>
+                <select name="wednesday3type">
+                    <option>Continue</option>
+                    <option>Start</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="thursday3">
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="thursday3type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+
+            <td>
+                <select name="friday3">
+                    <option>C Programming</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="friday3type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>11:00 - 11:30</th>
+            <td>
+                <select name="monday4">
+                    <option>English</option>
+                    <option>Maths</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="monday4type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="tuesday4">
+                    <option>C Programming</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="tuesday4type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="wednesday4">
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="wednesday4type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="thursday4">
+                    <option>Web Dev</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                </select>
+                <select name="thursday4type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="friday4">
+                    <option>EEE</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="friday4type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>11:30 - 12:00</th>
+            <td>
+                <select name="monday5">
+                    <option>Web Dev</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                </select>
+                <select name="monday5type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="tuesday5">
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="tuesday5type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="wednesday5">
+                    <option>C Programming</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="wednesday5type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="thursday5">
+                    <option>EEE</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="thursday5type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="friday5">
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="friday5type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>12:00 - 12:30</th>
+            <td colspan="5">Lunch / Break</td>
+        </tr>
+
+        <tr>
+            <th>12:30 - 13:00</th>
+            <td>
+                <select name="monday7">
+                    <option>EEE</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="monday7type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="tuesday7">
+                    <option>English</option>
+                    <option>Maths</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="tuesday7type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="wednesday7">
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="wednesday7type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="thursday7">
+                    <option>C Programming</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>Web Dev</option>
+                </select>
+                <select name="thursday7type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+            <td>
+                <select name="friday7">
+                    <option>Web Dev</option>
+                    <option>Maths</option>
+                    <option>English</option>
+                    <option>EEE</option>
+                    <option>C Programming</option>
+                </select>
+                <select name="friday7type">
+                    <option>Start</option>
+                    <option>Continue</option>
+                </select>
+            </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <button type="button">Save Timetable</button>
+
+    
+    </div>
+</body>
+</html>

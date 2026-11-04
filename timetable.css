@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+}
+    #theme:checked ~ .page {
+        background-color: #121212;
+        color: white;
+    }
+
+    #theme:checked ~ .page nav {
+        background-color: #222;
+    }
+
+    #theme:checked ~ .page a {
+        color: #90caf9;
+    }
+
+    #theme:checked ~ .page table {
+        background-color: #222;
+        color: white;
+    }
+
+    #theme:checked ~ .page th,
+    #theme:checked ~ .page td {
+        border: 1px solid #555;
+    }
+
+    #theme:checked ~ .page input,
+    #theme:checked ~ .page select {
+        background-color: #333;
+        color: white;
+    }
+    html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.page {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body:has(#theme:checked) {
+    background-color: #121212;
+}
+
+#theme:checked ~ .page {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #121212;
+}
+.a {
+    color: #2563EB;
+    cursor: pointer;
+    font-weight: bold;
+}
