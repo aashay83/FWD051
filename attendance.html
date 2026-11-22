@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance OS — Attendance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">◷ Attendance OS</div>
+    <div class="header-actions">
+        <button id="reminderBtn" type="button">🔔 Enable reminders</button>
+        <button id="themeBtn" type="button" aria-label="Toggle colour theme">☀ / ☾</button>
+    </div>
+</header>
+
+<main>
+    <section class="welcome">
+        <div>
+            <p class="muted">YOUR CLASS RECORDS</p>
+            <h1>Attendance</h1>
+            <p class="muted">Review and update your attendance history.</p>
+        </div>
+    </section>
+
+    <nav>
+        <a class="tab" href="index.html">Overview</a>
+        <a class="tab" href="timetable.html">Timetable</a>
+        <a class="tab" href="subjects.html">Subjects</a>
+        <a class="tab active" href="attendance.html">Attendance</a>
+    </nav>
+
+    <section>
+        <h2>Mark Attendance</h2>
+        <p class="muted">Choose a scheduled class from the timetable to record whether you were present or absent.</p>
+        <div class="card form">
+            <label for="recordClass">Class</label>
+            <select id="recordClass"></select>
+
+            <label for="recordDate">Date</label>
+            <input type="date" id="recordDate">
+
+            <label for="recordStatus">Status</label>
+            <select id="recordStatus">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+
+            <button class="primary" id="saveAttendance" type="button">Save Attendance</button>
+        </div>
+
+        <h2>Attendance History</h2>
+        <div class="card form">
+            <label for="filterSubject">Filter by subject</label>
+            <select id="filterSubject">
+                <option value="all">All subjects</option>
+            </select>
+        </div>
+        <div id="attendanceHistory"></div>
+    </section>
+</main>
+</body>
+</html>
