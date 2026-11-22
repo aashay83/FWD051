@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance OS — Subjects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">◷ Attendance OS</div>
+    <div class="header-actions">
+        <button id="reminderBtn" type="button">🔔 Enable reminders</button>
+        <button id="themeBtn" type="button" aria-label="Toggle colour theme">☀ / ☾</button>
+    </div>
+</header>
+
+<main>
+    <section class="welcome">
+        <div>
+            <p class="muted">YOUR COURSES</p>
+            <h1>Manage Subjects</h1>
+            <p class="muted">Add and organise the subjects you attend.</p>
+        </div>
+    </section>
+
+    <nav>
+        <a class="tab" href="index.html">Overview</a>
+        <a class="tab" href="timetable.html">Timetable</a>
+        <a class="tab active" href="subjects.html">Subjects</a>
+        <a class="tab" href="attendance.html">Attendance</a>
+    </nav>
+
+    <section>
+        <h2>Add a Subject</h2>
+        <div class="card form">
+            <label for="subjectName">Subject Name</label>
+            <input type="text" id="subjectName" placeholder="e.g. Linear Algebra">
+
+            <label for="subjectCode">Subject Code</label>
+            <input type="text" id="subjectCode" placeholder="e.g. MTH101">
+
+            <label for="target">Attendance Target (%)</label>
+            <input type="number" id="target" value="75" min="1" max="100">
+
+            <button class="primary" id="addSubject" type="button">Add Subject</button>
+        </div>
+
+        <h2>Your Subjects</h2>
+        <div id="subjectList"></div>
+    </section>
+</main>
+</body>
+</html>
