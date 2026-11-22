@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance OS — Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">◷ Attendance OS</div>
+    <div class="header-actions">
+        <button id="reminderBtn" type="button">🔔 Enable reminders</button>
+        <button id="themeBtn" type="button" aria-label="Toggle colour theme">☀ / ☾</button>
+    </div>
+</header>
+
+<main>
+    <section class="welcome">
+        <div>
+            <p class="muted">PLAN YOUR WEEK</p>
+            <h1>Timetable</h1>
+            <p class="muted">Add your regular weekly classes.</p>
+        </div>
+    </section>
+
+    <nav>
+        <a class="tab" href="index.html">Overview</a>
+        <a class="tab active" href="timetable.html">Timetable</a>
+        <a class="tab" href="subjects.html">Subjects</a>
+        <a class="tab" href="attendance.html">Attendance</a>
+    </nav>
+
+    <section>
+        <h2>Add a Class</h2>
+        <div class="card form">
+            <label for="classSubject">Subject</label>
+            <select id="classSubject"></select>
+
+            <label for="classDay">Day</label>
+            <select id="classDay">
+                <option>Monday</option><option>Tuesday</option>
+                <option>Wednesday</option><option>Thursday</option>
+                <option>Friday</option><option>Saturday</option><option>Sunday</option>
+            </select>
+
+            <label for="startTime">Start Time</label>
+            <input type="time" id="startTime" value="09:00">
+
+            <label for="endTime">End Time</label>
+            <input type="time" id="endTime" value="10:00">
+
+            <button class="primary" id="addClass" type="button">Add Class</button>
+        </div>
+
+        <h2>Weekly Schedule</h2>
+        <div class="days" id="days"></div>
+        <div class="card">
+            <h3 id="selectedDay">Monday</h3>
+            <div id="dayClasses"></div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

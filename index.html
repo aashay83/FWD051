@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance OS — Overview</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">◷ Attendance OS</div>
+    <div class="header-actions">
+        <button id="reminderBtn" type="button">🔔 Enable reminders</button>
+        <button id="themeBtn" type="button" aria-label="Toggle colour theme">☀ / ☾</button>
+    </div>
+</header>
+
+<main>
+    <section class="welcome">
+        <div>
+            <p class="muted">YOUR SEMESTER DASHBOARD</p>
+            <h1>Welcome back 👋</h1>
+            <p class="muted">Keep your attendance under control.</p>
+        </div>
+    </section>
+
+    <nav>
+        <a class="tab active" href="index.html">Overview</a>
+        <a class="tab" href="timetable.html">Timetable</a>
+        <a class="tab" href="subjects.html">Subjects</a>
+        <a class="tab" href="attendance.html">Attendance</a>
+    </nav>
+
+    <section>
+        <h2>Attendance Overview</h2>
+        <div class="stats">
+            <div class="card"><p>Overall Attendance</p><h2 id="overall">0%</h2></div>
+            <div class="card"><p>Classes Attended</p><h2 id="present">0</h2></div>
+            <div class="card"><p>Classes Missed</p><h2 id="absent">0</h2></div>
+            <div class="card"><p>Safe Classes to Miss</p><h2 id="safe">0</h2></div>
+        </div>
+
+        <div class="card progress-card">
+            <h3>Attendance Progress</h3>
+            <div class="progress"><div id="progressBar"></div></div>
+            <p id="status">Target: 75%</p>
+        </div>
+
+        <h2>Subject Breakdown</h2>
+        <div id="subjectStats" class="subject-grid"></div>
+
+        <h2>Today's Classes</h2>
+        <div id="todayClasses"></div>
+    </section>
+</main>
+</body>
+</html>
