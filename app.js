@@ -461,6 +461,17 @@ function renderAll() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Register the PWA service worker when served from HTTPS or localhost.
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js")
+            .then(registration => {
+                console.log("Attendance OS service worker registered:", registration.scope);
+            })
+            .catch(error => {
+                console.error("Service worker registration failed:", error);
+            });
+    }
+
     setupTheme();
     updateReminderButton();
 
